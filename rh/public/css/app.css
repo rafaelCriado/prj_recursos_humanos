@@ -9814,7 +9814,7 @@ body,
 
 [class*="sidebar-dark"] .brand-link {
   color: rgba(255, 255, 255, 0.8);
-  border-bottom: 1px solid #ffc421;
+  border-bottom: 1px solid #D6666A;
 }
 
 [class*="sidebar-light"] .brand-link {
@@ -9856,7 +9856,7 @@ body,
 }
 
 [class*="sidebar-dark"] .user-panel {
-  border-bottom: 1px solid #ffc421;
+  border-bottom: 1px solid #D6666A;
 }
 
 [class*="sidebar-light"] .user-panel {
@@ -9979,7 +9979,7 @@ body,
 }
 
 .sidebar-dark-primary {
-  background-color: #909090;
+  background-color: #727171;
 }
 
 .sidebar-dark-primary .user-panel a:hover {
@@ -12104,7 +12104,7 @@ label:not(.form-check-label):not(.custom-file-label) {
 }
 
 .card-warning.card-outline {
-  border-top: 3px solid #ffc107;
+  border-top: 3px solid #d6666a;
 }
 
 .bg-warning .btn-tool, .alert-warning .btn-tool, .label-warning .btn-tool,

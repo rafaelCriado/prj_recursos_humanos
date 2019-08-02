@@ -2,17 +2,6 @@
 
 use GuzzleHttp\Middleware;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 //Auth::routes();
 
 
@@ -78,6 +67,22 @@ Route::group(['middleware'=>'auth'], function(){
     Route::get('/pedido/debitos/atualizar/{id}', 'PedidoController@atualizarDebitos')->name('pedido.atualizar.debitos');
     
     Route::get('/pedido/{id}',                   'PedidoController@pedido')->name('pedido.info');
+
+    //Rotas de Empresas
+    Route::get('/empresas',                      'EmpresasController@empresas')->name('empresas');
+    Route::get('/empresa/novo',                   'EmpresasController@novo')->name('empresa.novo');
+    
+    //Rotas de Candidatos
+    Route::get('/candidatos',                    'CandidatosController@candidatos')->name('candidatos');
+    Route::get('/candidato/novo',                'CandidatosController@novo')->name('candidato.novo');
+    
+    //Rotas de Vagas
+    Route::get('/vagas',                         'VagasController@vagas')->name('vagas');
+    Route::get('/vaga/novo',                     'VagasController@novo')->name('vaga.novo');
+    
+    //Rotas de Curriculos
+    Route::get('/curriculos',                    'CurriculosController@curriculos')->name('curriculos');
+    Route::get('/curriculo/novo',                'CurriculosController@novo')->name('curriculo.novo');
 
     //Rotas de Documentos
     Route::post('/documentos/incluir', 'DocumentoController@incluir')->name('documento.incluir');
